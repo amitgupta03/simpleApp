@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AppService {
-  source:string = 'https://api.publicapis.org/entries';
+  source:string = 'https://datausa.io/api/data?drilldowns=Nation&measures=Population';
   constructor(private http:HttpClient ) { }
 
   getSampleData():Observable<any> {

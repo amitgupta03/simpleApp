@@ -13,8 +13,8 @@ export class AppComponent implements OnInit{
 
   }
   ngOnInit(): void {
-     this.appService.getSampleData().subscribe((data: any[]) => {
-      this.sampleData = data.entries;
+     this.appService.getSampleData().subscribe((data) => {
+      this.sampleData = data['data'];
     }) ;
   }
   title = 'simpleApp';
